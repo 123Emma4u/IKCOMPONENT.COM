@@ -6,15 +6,6 @@ const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
-// The code is added cause I want to publish this into a website
-app.use(cors(
-  {
-    origin: ["https:deploy-mern-1whq.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
-  }
-));
-
 // Import Router
 const authRouter = require("./routes/auth");
 const categoryRouter = require("./routes/categories");
