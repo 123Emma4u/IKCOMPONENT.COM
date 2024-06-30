@@ -6,6 +6,14 @@ const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
+app.use(cors(
+  {
+    origin: ["https:deploy-mern-1whq.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
+
 // Import Router
 const authRouter = require("./routes/auth");
 const categoryRouter = require("./routes/categories");
