@@ -2,7 +2,7 @@
   "version": "0.1.0",
   "run": {
     "web": {
-      "port": 3000,
+      "port": 8000,
       "command": "npm run start:dev",
       "root": "./" 
     }
